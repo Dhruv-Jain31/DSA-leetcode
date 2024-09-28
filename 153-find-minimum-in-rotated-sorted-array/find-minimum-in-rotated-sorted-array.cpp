@@ -6,10 +6,10 @@ public:
         int minimum = INT_MAX;
         while(low <= high){
             int mid = (low + high)/2;
-            if (nums[low] <= nums[high]){
-                minimum = min(minimum,nums[low]);
-                break;
-            }
+            //if (nums[low] <= nums[high]){  //if this condition fails means subarray from mid to high is sorted
+              //  minimum = min(minimum,nums[low]);
+                //break;
+            //}
             if (nums[low] <= nums[mid]){
                 minimum = min(minimum,nums[low]);
                 low = mid + 1;
