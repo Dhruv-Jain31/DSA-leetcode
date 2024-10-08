@@ -4,11 +4,9 @@ public:
         int i = 0;
         int x = nums[i];
         while(x!=0){
+            i = x;
             x = nums[i];
             nums[i] = 0;
-            if(x!=0){
-                i = x;
-            }
         }
         return i;
     }
