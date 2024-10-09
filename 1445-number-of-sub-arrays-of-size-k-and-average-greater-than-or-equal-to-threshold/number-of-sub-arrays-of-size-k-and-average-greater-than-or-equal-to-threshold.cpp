@@ -14,8 +14,7 @@ public:
         }
         i = k;
         while(i < arr.size()){
-            sum = sum - arr[i-k];
-            sum = sum + arr[i];
+            sum = sum - arr[i-k] + arr[i];
             if(sum >= total_sum){
                 count++;
             }
