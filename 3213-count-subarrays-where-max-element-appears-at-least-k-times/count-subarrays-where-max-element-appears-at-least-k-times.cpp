@@ -8,7 +8,7 @@ public:
         int max_value = *max_element(nums.begin(),nums.end()); // function that gives max element in an array
 
         while(j<nums.size()){
-            m[nums[j]]++;
+            m[nums[j]]++; //insertion of element take place here
             while(m[max_value] >= k){
                 res = res + (n-j);
                 m[nums[i]]--;
